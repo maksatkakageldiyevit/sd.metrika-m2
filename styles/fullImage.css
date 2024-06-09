@@ -1,0 +1,140 @@
+.gallery {
+    position: relative;
+    height: 717px;
+}
+
+.gallery__box {
+    height: 100%;
+}
+.gallery__img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.gallery__title-wraper {
+    position: absolute;
+    width: 100%;
+    top: 60px;
+    z-index: 100;
+}
+.gallery__title {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 30px;
+    color: white;
+    letter-spacing: -0.66px;
+}
+.gallery__slides {
+    position: relative;
+    height: 100%;
+}
+.gallery__slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+.gallery__slide_active {
+    opacity: 1;
+}
+
+.fullWidthImage__text {
+    position: absolute;
+    bottom: 60px;
+    color: white;
+    font-size: 30px;
+    line-height: 41px;
+    letter-spacing: -0.9px;
+    max-width: 443px;
+}
+
+.gallery__controls-wraper {
+    position: absolute;
+    bottom: 162px;
+    width: 100%;
+}
+.gallery__controls {
+    display: flex;
+    gap: 14px;
+}
+.gallery__control-prev, .gallery__control-next {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    background: none;
+    background-repeat: no-repeat;
+    background-position: left;
+    border: none;
+    cursor: pointer;
+}
+.gallery__control-prev {
+    background-image: url('../resourses/full.image/con-prev.png');
+    transform: rotate(180deg);
+}
+.gallery__control-next {
+    background-image: url('../resourses/full.image/con-next.png');
+    transform: rotate(180deg);
+}
+.gallery__control-prev:hover,
+.gallery__control-next:hover{
+    opacity:0.5;
+}
+@media (max-width: 960px){
+.gallery__title {
+    font-size: 20px;
+    line-height: 27px;
+    letter-spacing: -0.66px;
+}
+.slide__title {
+    bottom: 80px;
+    font-size: 25px;
+    line-height: 34px;
+    letter-spacing: -0.9px;
+    max-width: 443px;
+}
+.fullWidthImage__text {
+    bottom: 80px;
+    font-size: 25px;
+    max-width: 377px;
+    letter-spacing: -0.75px;
+}
+}
+@media (max-width: 768px){
+.gallery__title {
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: -0.66px;
+}
+
+.gallery__controls-wraper {
+    bottom: 50%;
+}
+.gallery__controls {
+    justify-content: space-between;
+}
+.gallery__control-prev, .gallery__control-next {
+    width: 30px;
+    height: 30px;
+}
+}
+
+@media (max-width: 576px) {
+  
+    .gallery {
+      max-height:408px;
+    } 
+   .gallery__slide {
+          width: 50% 50%;
+        }
+
+    .fullWidthImage__text{
+        bottom: 60px;
+        max-width: 287px;
+        font-size: 20px;
+        line-height: normal;
+        letter-spacing: -0.57px;
+    }
+}

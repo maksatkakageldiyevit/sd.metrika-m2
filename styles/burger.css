@@ -1,0 +1,128 @@
+
+
+.burger {
+    position: fixed;
+    z-index: 50;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgba(0, 0, 0, 0.9);
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s ease;
+}
+.burger_open {
+    opacity: 1;
+    visibility: visible;
+}
+.burger-btn {
+    display: none;
+    position: absolute;
+    z-index: 100;
+    width: 50px;
+    height: 10px;
+    background: url('../resourses/logo/burger_big.svg')no-repeat;
+} 
+.burger__content {
+    width: 80%;
+    height: 100%;
+    background-color: #fff;
+}
+.burger__inner {
+    position: relative;
+    padding-top: 80px;
+    padding-left: 15px;
+}
+.burger__logo {
+    width: 127px;
+    padding-bottom: 20px;
+}
+.burger__menu {
+    padding-bottom: 94px;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 18px;
+    letter-spacing: -0.54px;
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 0;
+    color: #121212;
+}
+.burger__menu a {
+    text-decoration: none;
+    transition: all .07s;
+    color: #121212;
+}
+.burger__link {
+    line-height: normal;
+    color: #121212;
+}
+.burger__callback {
+    line-height: normal;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.48px;
+    color: #000;
+    opacity: 0.5;
+}
+.burger__number {
+    line-height: normal;
+}
+.burger__number-line {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 45.621px;
+    letter-spacing: -0.6px;
+    text-decoration: none;
+    color: #121212;
+}
+.burger__mail {
+    line-height: normal;
+}
+.burger__mail-line {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: -0.6px;
+    text-decoration: none;
+    color: #121212;
+}
+@media (max-width: 961px) {
+    .burger-btn {
+        position: absolute;
+        align-items: center;
+        display: block;
+        top: 0px;
+        right: 0px;
+        z-index: 100;
+        width: 50px;
+        height: 10px;
+        background: url('../resourses/logo/burger_big.svg') no-repeat;
+    }
+    .burger-btn_open {
+        cursor: pointer;
+        border: none;
+        width: 34px;
+        height: 34px;
+        background: url('../resourses/logo/burger-close.svg') no-repeat;
+}
+    }
+    @media (max-width: 576px) {
+        .burger-btn {
+            height: 100%;
+            background-size: 100%;
+            background: url('../resourses/logo/burger_small.svg')no-repeat;
+        }
+        .burger-btn_open {
+            height: 100%;
+            background: url('../resourses/logo/burger-close.svg') no-repeat;
+        }
+    }

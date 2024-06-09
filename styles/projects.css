@@ -1,0 +1,117 @@
+
+   .projects__title {
+    margin-bottom: 30px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height:25px;
+    text-transform: uppercase;
+   }
+   .projects__container{
+    margin-bottom: 30px;
+    margin: 0 auto;
+}
+   
+   
+   .project__image{
+    object-fit: cover;
+    margin-bottom: 15px;
+    width:100%
+   }
+  .project__title{ 
+    margin-bottom: 15px;
+    font-size: 30px;
+    line-height:36px;
+    color: #121212;
+    letter-spacing:-0,9px;
+  }
+  .project__link{
+    font-size: 20px;
+    line-height: 30px;
+    color:#AD1818;
+    letter-spacing: -0.6px;
+    text-decoration: none;
+  } 
+   .project__item{
+    margin-bottom:90px ;
+   }
+  
+  .projects__btn{
+    margin-top:90px;
+    display:block;
+    width: 100%;
+    height: 153px;
+    line-height: 153px;
+    border:1px solid #AD1818;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    color:#AD1818;
+    font-size: 30px;
+
+  }
+   .projects__btn:hover{
+    background-color: #AD1818 ;
+    color:#FFF;
+   }
+  @media (max-width:960px){
+    .projects__title{
+      margin-bottom: 20px;
+    }
+    .project__image{
+      height:450px;
+      width:100%;
+      object-fit: cover;
+    }
+    .project__item{
+      margin-bottom: 80px;
+    }
+    .project__title{
+      margin-bottom:10px;
+      font-size:25px;
+      line-height:34px;
+      letter-spacing:-0.75px;
+    }
+    .project__link{
+      font-size: 25px;
+      line-height: 34px;
+      letter-spacing:-0.75px;
+    }
+
+  }
+  @media(max-width:768px){
+    .projects__title{
+      margin-bottom: 15px;
+    }
+    .project__image{
+      height: 250px;
+      margin-bottom:20px;  
+    }
+    .project__item{
+      margin-bottom:49px;
+    }
+    .project__title{
+      font-size:18px;
+      line-height: 25px;
+      margin-bottom: 20px;
+    }
+    .projects__link{
+      font-size:16px;
+      line-height: 22px;
+      letter-spacing:-0.48px;
+    }
+  }
+  @media (max-width:960px){
+    .fullWidthBtn{
+      line-height: 41px;
+    }
+  }
+  @media(max-width:768px){
+    .fullWidthBtn{
+     padding: 37px 0 37.14px;
+     border:0.76px solid#ad1818;
+     border-radius: 3.8px;
+     font-size:22px;
+     line-height:30px;
+     letter-spacing:-0.66px;
+    }
+  }
